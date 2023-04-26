@@ -5,77 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      ul.sidenav {
-        list-style: none;
-        width: 25%;
-        background-color: #aaa;
-        position: fixed;
-        height: 100%;
-        overflow: auto; /*icerik alandan tasarsa scroll ekler*/
-      }
-      li {
-        text-align: center;
-      }
-      ul.sidenav li a {
-        display: block;
-        color: #000;
-        text-decoration: none;
-        padding: 16px 16px;
-        font-size: 25px;
-      }
-      ul.sidenav li a.active {
-        background-color: #4caf50;
-        color: white;
-      }
-      ul.sidenav li a:hover:not(.active) {
-        background-color: #555;
-        color: white;
-      }
-      div.content {
-        margin-left: 25%;
-        padding: 20px 20px;
-        height: 1500px;
-        background-color: orange;
-      }
-      div.content h2 {
-        text-align: center;
-      }
-      div.content p span {
-        font-size: 50px;
-        font-weight: 900;
-        color: red;
-      }
-
-      @media screen and (max-width: 900px) {
-        ul.sidenav {
-          width: 100%;
-          height: auto;
-          position: fixed;
-          top: 0;
-        }
-        ul.sidenav li a {
-          float: left;
-          padding: 12px;
-        }
-        div.content {
-          margin-left: 0;
-        }
-      }
-      @media screen and (max-width: 400px) {
-        ul.sidenav li a {
-          float: none;
-          text-align: center;
-        }
-        div.content {
-          margin-top: 160px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <ul class="sidenav">
